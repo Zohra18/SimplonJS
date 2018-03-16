@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href=styleFlo.css rel=stylesheet>
+    <meta charset="UTF-8">
+    <title>Simplon</title>
+<!-- attention, voici les liens font-awesome pour un petit logo en bas de page -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+ <nav></nav>
+
+ <header>
+    <div id="game"></div>
+ </header>
+
+ <section id="valeurs"></section>
+ <section id="formation"></section>
+
+
+<!-- en gros le HTML c'est une grosse div container qui s'appel
+"encadrement". C'est du flex/column.
+
+Dedans tu as deux div:
+
+"témoignages": en flex/column
+
+"informations": en flex/row.
+
+_________________________________________________________________
+
+Ok, ca commence.
+
+La div encadrement, c'est le container,
+elle contiend toute les autres div et le magnifique
+fond bleu. -->
+ <div id="encadrement">
+
+<!-- dans témoignage tu trouveras la photos de l'apprenant
+et le témoignage...logique-->
+   <div id="témoignage">
+
+<!-- rectangle-style-90 c'est le fond des années 90
+derrière la photo de l'apprenant-->
+     <div id="rectangle-style-90">
+
+     <img src="img/avatarr.jpg">
+
+     </div>
+
+<!-- là tu as la légende sous l'avatar-->
+       <p id="légende">Michel, 31 ans,<br>
+         (en reconvertion professionnelle)</p>
+
+<!-- tu as un span sur la phrase 1 du paragraphe pour
+qu'elle soit en mode titre-->
+         <p id="txt1>"><span id="phrase1">"J'ai trouvé rassurant que nos formateurs soient d'anciens apprenants.</span><br><br><br>
+         Ca nous montre que le cursus Développeur Web Full Stack JS peut être
+         efficace si on s'en donne les moyens.<br>
+         Leur motivations ne sont pas feintes, on sent leur implications.<br><br>
+         Ils souhaitent autant que nous que nous trouvions un travail en fin de cycle.<br>
+         Ca nous pousse toujours vers l'avant."<br><br>
+       </p>
+
+   </div>
+
+
+<!-- Ok, on passe sur la section informations,
+t'as la phrase "A Simplon", le texte du dessous est dans
+une liste ul en deux li. Ensuite tu as la photo de Roro et tout à droite
+le "Ci-contre" -->
+
+   <div id="informations">
+
+<!-- cette div ne sert qu'as structurer tout ce qu'il y as
+dedans en column. Elle n'as pas de css, j'ai mis un id juste pour
+me souvenir d'à quoi elle sert. -->
+<div id="phrase2-plus-liste">
+   <p><span id="phrase2">A Simplon,</span><br><br>
+
+     <ul>
+
+       <li>Les formateurs sont des professionels ayant pu pratiquer
+     en entreprise ou en Freelance.</li><br>
+     Leur expérience du terrain est un vrai plus pour les apprenants<br>car la
+     pédagogie d'apprentissage s'appuie sur les besoins du monde
+     du travail.<br><br><br>
+     <li>De plus, les apprenants sont suivit par un chargé de mediation durant
+     tout leur parcours.<br><br>
+     Sa fonction est de trouver et mettre en place des opportunités pour
+     eux.<br>
+     Elle creé leur emploi du temps (bien complet!), elle aide aussi les apprenants dans leurs demarches administratives, création de CV,
+     recherche de stage, d'emploi.</li></p>
+</div>
+
+<!-- là tu as du font-awesome pour la petite flêche avant le texte -->
+     <img style="margin-left: 10px" src="img/roro1.png">
+     <p style="font-size: 12px"><i style="color:#7731A8" class="fas fa-arrow-left"></i> Ci-contre,<br><br>
+       Un exemple de formateur au charisme et à l'implication sans faille.</p>
+
+   </div>
+
+ </div>
+
+ <section id="humains"></section>
+ <section id="ambiance"></section>
+ <footer></footer>
+</body>
+</html>
