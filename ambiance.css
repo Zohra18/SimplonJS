@@ -9,9 +9,10 @@ html, body{
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+
 	height: 100vh;
 	background-color:#C7DBD0 ;
-	/*background-image: url(./img/ambiance-liege.jpg);*/
+
 }
 
 #ambiance h1{
@@ -52,7 +53,7 @@ html, body{
 	overflow: hidden;
 	border: white solid 10px;
 	border-bottom: white solid 50px;
-	box-shadow: 8px 8px 12px #454545; 
+	box-shadow: 8px 8px 12px #454545;
 	margin: 0 0 40px 20px;
 	display: flex;
     align-items: center;
