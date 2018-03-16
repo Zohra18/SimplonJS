@@ -3,25 +3,28 @@
 <head>
     <link href=styleFlo.css rel=stylesheet>
     <meta charset="UTF-8">
-    <title>Simplon</title>
-<!-- attention, voici les liens font-awesome pour un petit logo en bas de page -->
+    <link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" type="text/css" href="ambiance.css">
+	<link rel="stylesheet" type="text/css" href="valeur.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <!-- attention, voici les liens font-awesome pour un petit logo en bas de page -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Simplon</title>    
 </head>
 
 <body>
-
- <nav></nav>
-
- <header>
-    <div id="game"></div>
- </header>
-
- <section id="valeurs"></section>
- <section id="formation"></section>
-
-
-<!-- en gros le HTML c'est une grosse div container qui s'appel
+  
+<header>
+  <!--barre de navigation-->
+ <nav>
+   <div id="navbar">
+     <div class="logo"><img src=""></div>
+     <div class="a1"><a href="#valeurs">Nos Valeurs</a></div>
+     <div><a href="#formation">La Formation</a></div>
+     
+     <!-- en gros le HTML c'est une grosse div container qui s'appel
 "encadrement". C'est du flex/column.
 
 Dedans tu as deux div:
@@ -104,9 +107,127 @@ me souvenir d'à quoi elle sert. -->
    </div>
 
  </div>
+     <div><a href="#humains">Nos Apprenants</a></div>
+     <div><a href="#ambiance">L'environnement</a></div>
+  </div>
+ </nav>
+</header>
+   <section id="valeurs">
+	<div id="flex-container">
+		<div class="item">
+			<h2>un impact sociale maximal et durable,</h2>
+			<img class="value_img"src="img/img_simp.jpeg">
+			<p>Les prises de position de Simplon.co concernent le code pour tous, la parité hommes-femmes dans le numérique et l’économie sociale et solidaire, la bataille pour l’emploi des jeunes, la revitalisation des territoires dont les quartiers populaires, les zones rurales et l’Outre Mer, la lutte contre toutes les formes d’extrémisme politique ou religieux mais rien là dedans ne relève d’une approche partisane ou politicienne.</p>
+			<a class="button" href="#">Savoir+</a>
+		</div>
+		<div class="item">
+				<h2>levier d’inclusion,l’insertion et d’emploi,</h2>
+				<img class="value_img" src="img/img2_simp.jpeg">
+				<p>On peur donc considérer que Simplon n’est pas restreint à des “activités” (formation, ou production, ou incubation, ou éducation populaire, ou e-inclusion…) ou à des publics (décrocheurs, seniors, femmes, réfugiés…) ou à des territoires (quartiers populaires, ruralité, Outre Mer, international) mais bien une mission qui n’a pas de limite.</p>
+				<a class="button" href="#">Savoir+</a>
+		</div>
+		<div class="item">
+				<h2>un catalyseur de mixité, de diversité</h2>
+				<img class="value_img" src="img/img3_simp.jpeg">
+				<p>Pour autant, de part son modèle économique et son hyper-croissance, Simplon est résolument dans une démarche continue et permanente de structuration, de pérennité économique, d’arbitrage entre les activités et les projets et constitue donc une entité cohérente et homogène visant un impact sociale maximal et durable.</p>
+				<a class="button" href="#">Savoir+</a>
+		</div>
 
- <section id="humains"></section>
- <section id="ambiance"></section>
- <footer></footer>
-</body>
+
+	</div>
+   </section> <!--my section-->
+   <section id="formation"></section>
+   <section id="encadrement"></section>
+   <section id="humains"></section>
+   <section id="ambiance"></section>
+
+   
+<section id="ambiance">
+
+ 	<h1></h1>
+ 	<div id="ambiance-bloc-polaroid-general">
+	 	<div id="ambiance-bloc-polaroid">
+		 	<div class="ambiance-polaroid" id="ambiance-photo-1">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG1.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-2">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG2.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-3">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG3.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-4">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG4.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-5">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG5.jpg"></a>
+		 	</div>
+	 	</div>
+	 	<div id="ambiance-bloc-polaroid-2">
+		 	<div class="ambiance-polaroid" id="ambiance-photo-1">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG9.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-2">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG7.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-3">
+		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG8.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-4">
+		 		<a class="titre-contact" href="#popup1">
+		 			<video width="150px" loop autoplay="true">
+  					<source src="./img/ambiance-video.mp4" type="video/mp4">
+					</video>
+		 		</a>
+		 	</div>
+	 	</div>
+ 	</div>
+		
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">&times;</a>			
+				<div class="content">
+					<div id="slider">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG1.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG2.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG3.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG4.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG5.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG9.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG7.jpg" >
+						</div>
+						<div class="mySlides fade">
+						  <img src="./img/ambiance-IMG8.jpg" >
+						</div>
+						<div class="mySlides fade">
+							<video width="400px" loop autoplay="true">
+  								<source src="./img/ambiance-video.mp4" type="video/mp4">
+							</video>
+						</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	
+ </section>
+  <footer>
+  </footer>
+ </body>
 </html>

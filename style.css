@@ -1,3 +1,4 @@
+
 #encadrement {
       display:flex;
       flex-direction: column;
@@ -89,3 +90,139 @@ d'anciens apprenants.                           */
 
 
 /*                      informations  end                      */
+=======
+*{margin: 0;
+padding: 0;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    height: 550px;
+    padding-top: 50px;
+    margin: auto;
+    }
+
+.formintro{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin: auto
+}
+#intro {
+ line-height: 40px;
+    padding-left: 10px;
+}
+
+#parin {
+  width: 90%;
+    padding-top: 30px;
+    margin: auto;
+    
+}
+
+p{
+    color: black;
+    font-size: 20px;
+}
+
+div.container{ max-width: 320px;
+}
+
+
+
+div.container:hover .page{
+    transform: rotateY(180deg);}
+
+
+.container, .devant, .arriere{
+width: 320px;
+height: 520px}
+
+.page{transition: .6s;
+    position: relative;
+transform-style: preserve-3d}
+
+/*cacher la face arriere*/
+
+.devant, .arriere{
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/*cacher la face avant*/
+.devant{
+    z-index: 1;
+    transform: rotateY(0deg);
+    background: dodgerblue ;
+    text-align: center
+}
+
+.arriere{
+transform: rotateY(180deg);
+background: dodgerblue;
+border-radius: 10px;
+color: white;
+text-align: center;
+}
+
+.container{
+perspective:300px}
+
+
+h2{color: white;
+    text-align: center}
+
+a{    
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: orange;
+    top:420px;
+    left: 110px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black
+    }
+
+a:hover{background: orangered;
+        color: snow}
+
+h1 {color: white;
+    text-align: center}
+
+.txt {
+    height: 240px;
+}
+#brain {
+    float: left;
+    padding: 40px 20px 0px 0px; 
+}
+#tem {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    height: 380px;
+    margin: 40px auto;
+    background-color: dodgerblue;
+    padding-top: 60px;
+}
+
+#tem2{
+    font-size: 40px;
+    color: dodgerblue;
+    margin: 30px auto;
+}
+

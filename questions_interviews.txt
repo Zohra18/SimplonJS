@@ -1,0 +1,69 @@
+Questions pour interview
+
+
+
+Que faisais-tu avant Simplon ?
+Quand as-tu voulu faire du code ?
+Est-ce que tu connaissais le code avant Simplon ?
+De quoi es-tu le (la plus fière) chez Simplon ?
+Quelque chose à ajouter ?
+
+Tiffany - 22 ans
+1) Je travaillais manageuse chez bagelstein. Diplômée d'un bac ST2S. Après le bac je savais pas quoi faire, donc fac de pyscho mais trop glère et après enceinte. donc boulot Alimentaire.
+
+2) ce qui mínteressait ct la comm et le boulot de dev c ce qui poussait ta créativité.
+
+3) Pas du tout. Je savais même pas ce que c'était le HTML.
+
+4) Pas de mes collègues de travail en tout cas. L'ambiance est cool. Je suis de réaliser que je eux avoir des compétences en code, en design et que je peux pousser dedans.
+
+5) Dédicace à la promo 10.
+
+
+Morgan (dit Dr Love), 24 ans
+
+1) Jétais cuisinier pendant 6 ans. J'ai commencé à la fin du collège. J'ai fait un bac cuisine sans la valider et j'ai enchainé les boulot de commis pendant 6 ans. Ct bien au début mais ct vraiment un monde de con. Puis je suis tombé sur un chef super cool et j'ai réalisé que c'était trop dur sans.
+
+2) Du coup après le métier manuel de la cuisine, étant un gros geek je me suis dit que ct pas con de travailler sur ordi. Du coup j'ai essayé et ça m'aplus très tr`s vite.
+
+3) Un petit peu en HTML/CSS mais vraiment du survolage, Pour la petite anecdote, la première fois que j'au vu du code ct sur RPGmaker, ct en RUby pour créer des outils ça má très vite calmé par ce que ct très compliqué mais ça mis une graine dans la tête pour le code.
+
+4) Ce qui me plait c de laisser sa chance à des personnes qui sont sans diplômes et ils jugent sur les personnes pas sur le cv. Mon avancé sur codewars (174 points) avec la logique des exercices.
+
+5) Non.
+
+Hajar, 27 ans
+
+1) J'ai fait un bac S. Je voulais pas étudier au départ et juste partir. Mais j'ai quand m^me fait bac S. J'ai fait fac histoire parce que j'adore l'histoire donc licence. Daillerus jaime tjrs et jaimerais lier avec ça avec le code.
+J'adore aussi le Japon donc j'ai fait licence de Japonais et également culture donc j' ai pris option comm intercultrurelle. Mais ct tr`s orienté front (wordpress). Et ensuite les études arpès jén ai eu marre et envie de prendre du recul. 
+Du coup j'ai bossé en tant que vendeuse pui master en intermédiation culturel mais encore une fois trop peu technique.
+
+2) jt très intéressé par le code. et qudn j'ai vu manque de programmation. 
+
+3) non car je savais pas trop comment m'y prendre
+
+4) j'ai plus peur de toucher au code. je pensais jamais y arriver. j'avais un blocage qui est en train de s'enlever.
+
+5) Gramos c'est le meilleur.
+
+Yaëlle, 23 ans
+
+1) Avant Simplon je travaillais en tant que vendeuse en prêt-à-porte pendant 1 an parce que la fac de langue me saoulait.
+
+2) Il y avait beaucoup de débouchés (j'ai vu sur les offres démplois) des métiers qui existent partout sur tous les supports. Un métier en constante évolution et pas du tout monotone.
+
+3) Absolument pas et je n'aimais pas le code. Je me suis intéréssé 2 mois avant la formation. J'ai fait du codecademu et j'ai kiffé.
+
+4) Que je comprenne le Js que ce soit moins flou. Je pourrais en faire du coup plus tard.
+
+5) Super expérience. Dédicace au meilleur délégué de la classe.
+
+Sibylle, 27 ans
+
+1) Avant Simplon j'ai fait iut de gestion pdt 2 ans à Sceaux (finance). Après licence histoire de l'art à la Sorbonne. Après 1ere année travail galerie art comtemporain à belleville (où jeunes galleries assez importants plutôt branchés jeunes artistes avec structure très réduite - de 2 à 3 personnes). J'ai travaillé avec créateur en tant qu'assitante pour logistique, stock, transport, régie, comm. vente. Tout cá pdt 4 ans tjrs à mi-temps pour faire recherche à côté sur histoire de lárt/histoire des médias sur vidéos pratique électronique revendicatrice rendu possible avec nouvel outils comme caméras Sony. Très développé aux US, Premier projet = expo à paris sur vidéos Freeks. Donné cours pour financer ça à Parsons School. Ensuite invite à une école cheapest university où artistes invités et où cours de code donnés. Partenariat avec bibliothèque de Beaubourg pour accueillir archives et seminaires prevus. Possibilité de bourse pour aller collecter actualités de pleins de personnes.
+
+2) 3) Dans le code de mon travail où éditait un site PHP/MySQL pour actu et ajouter balises et ça mávait amusé. Puis à la cheapest university un des fondateur donnait également des cours et j'ai pu en parler.
+
+4) Le javaScript je sens que j'ai une affinité. Je mène 2 projets de front et c compliqué et j'ai pas envie de bâclé l'un ou l'autre. Donc je dois réussir à être stratégique dans répartition de mon temps pour que sur la durée j'arrive à mener les 2 projets à bout. Le manque de temps est un problème (bcp de concessions sur mes habitudes pour mes recherches).
+
+5) Plutôt agréablement surprise par l'ambiance surtout avec des personnes complètement différentes.
