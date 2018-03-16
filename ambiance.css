@@ -10,7 +10,8 @@ html, body{
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	background-image: url(./img/ambiance-liege.jpg);
+	background-color:#C7DBD0 ;
+	/*background-image: url(./img/ambiance-liege.jpg);*/
 }
 
 #ambiance h1{
@@ -53,12 +54,15 @@ html, body{
 	border-bottom: white solid 50px;
 	box-shadow: 8px 8px 12px #454545; 
 	margin: 0 0 40px 20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* -------------- POLAROID ------------------*/
 
 .ambiance-polaroid img{
-	width: 300px;
+	width: 200px;
 }
 /*.ambiance-polaroid p{
 	color: black;
@@ -83,7 +87,130 @@ html, body{
 	transform: rotate(10deg);
 }
 
-/* -------------- BLOC COMMENT ------------------*/
+/* -------------- POPUP ------------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666666;
+  z-index: 2;
+}
+.popup .close:hover {
+  color: #360014;
+}
+.popup .content {
+	display: flex;
+}
+
+/* ------------- SLIDER -----------------*/
+#slider{
+	width:500px;
+	height: 500px;
+	overflow: hidden;
+}
+.mySlides {
+	display: none;
+	
+}
+.mySlides img{
+	width: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next{
+    border-radius: 3px 0 0 3px;
+    right: 4%;
+}
+.prev{
+	left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 /* -------------- BLOC POLAROID ------------------*/
