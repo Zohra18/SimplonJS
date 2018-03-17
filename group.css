@@ -1,0 +1,744 @@
+/*css general*/
+html, body{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+header{
+  width: auto;
+  height: 650px;
+  overflow: hidden;
+}
+/*fonts*/
+
+/* nav bar text */
+@font-face { font-family: DR; src: url('font/Directors-Regular.ttf');}
+
+/* txt & titre bold */
+@font-face { font-family: QCB; font-weight: bold; src: url('font/QuarcaCondBold.otf');}
+@font-face { font-family: QCBI; font-weight: bold; font-style: italic; src: url('font/QuarcaCondBoldItalic.otf');}
+
+/* normal txt normal*/
+@font-face { font-family: QC; src: url('font/QuarcaCondBook.otf');}
+@font-face { font-family: QCI; font-style: italic; src: url('font/QuarcaCondBookItalic.otf');}
+
+/* normal txt thin*/
+@font-face { font-family: QCL; src: url('font/QuarcaCondLight.otf');}
+@font-face { font-family: QCLI; font-style: italic; src: url('font/QuarcaCondLightItalic.otf');}
+
+/*colors*/
+
+/*barre de navigation*/
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+}
+#navbar a{
+  font-family: DR;
+  color: white;
+  font-size: 30px;
+  margin-left: 15%;
+  letter-spacing: 1px;
+}
+.a1{
+  padding-top: 10px;
+}
+.a2{
+  margin-right: 5%;
+  padding-top: 10px;
+}
+#navbar a:hover{
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
+}
+#navbar .a1{
+}
+.logo img{
+  height: 50px;
+  z-index: 3;
+  overflow: visible;
+  background-color: grey;
+}
+/* video */
+.vid{
+  width: 100%;
+  height: 600px;
+  background-color: black;
+}
+/* h1 header */
+header #intro{
+  color: white;
+  z-index: 3;
+  margin: 0%;
+  padding-top: 1%;
+  width: 20%;
+  position: absolute;
+  font-family: QCB;
+  height: 500px;
+}
+
+
+/* -------------- BLOC COMMENT Shelley------------------*/
+#valeurs{
+    background-color: blueviolet;
+}
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+#flex-container{
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+  padding-left:5%;
+
+}
+.item{
+ width: 30vw;
+ height: auto;
+ padding:2px;
+}
+.value_img{
+	width: 30vw;
+}
+
+@media only screen and (max-width: 767px){
+    #flex-container{
+        flex-direction: column;
+    }
+    .item{
+        width: 100vw;
+    }
+
+}
+
+/*                  SECTION VALENTINO                      */
+
+
+#form{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    height: 550px;
+    padding-top: 50px;
+    margin: auto;
+    }
+
+.formintro{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin: auto
+}
+#intro {
+ line-height: 40px;
+    padding-left: 10px;
+}
+
+#parin {
+  width: 90%;
+    padding-top: 30px;
+    margin: auto;
+}
+
+#formation p{
+    color: black;
+    font-size: 20px;
+}
+
+#formation div.container{ max-width: 320px;
+}
+
+#formation div.container:hover .page{
+    transform: rotateY(180deg);}
+
+
+.container, .devant, .arriere{
+width: 320px;
+height: 520px}
+
+.page{transition: .6s;
+    position: relative;
+transform-style: preserve-3d}
+
+/*cacher la face arriere*/
+
+.devant, .arriere{
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/*cacher la face avant*/
+.devant{
+    z-index: 1;
+    transform: rotateY(0deg);
+    background: dodgerblue ;
+    text-align: center
+}
+
+.arriere{
+transform: rotateY(180deg);
+background: dodgerblue;
+border-radius: 10px;
+color: white;
+text-align: center;
+}
+
+.container{
+perspective:300px}
+
+
+#formation h2{color: white;
+    text-align: center}
+
+#formation a{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: orange;
+    top:420px;
+    left: 110px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black
+    }
+
+#formation a:hover{background: orangered;
+        color: snow}
+
+#formation h1 {color: white;
+    text-align: center}
+
+.txt {
+    height: 240px;
+}
+#brain {
+    float: left;
+    padding: 40px 20px 0px 0px;
+}
+#tem {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    height: 380px;
+    margin: 40px auto;
+    background-color: dodgerblue;
+    padding-top: 60px;
+}
+
+#tem2{
+    font-size: 40px;
+    color: dodgerblue;
+    margin: 30px auto;
+}
+
+
+
+
+/*                  SECTION FLORENT                        */
+#encadrement {
+      display:flex;
+      flex-direction: column;
+      width:100%;
+      height:1100px;
+      border-radius: 10px;
+      background-color: #D1C9E4;
+}
+
+
+
+
+/*                      témoignage                        */
+#témoignage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+      text-align: center;
+      margin-top: 20px;
+}
+
+#rectangle-style-90 {
+      width:100%;
+      height: 300px;
+      background-image:url(img/wallpaper.png);
+      margin-top:30px;
+}
+
+#témoignage img {
+      margin:20px;
+      border:6px solid black;
+      border-radius:50%;
+      height: 80%;
+      width: 20%;
+}
+
+#légende {
+      font-size: 12px;
+      padding-bottom: 40px;
+}
+
+
+/*   phrase d'accroche:
+"J'ai trouvé rassurant que nos formateurs soient
+d'anciens apprenants.                           */
+#phrase1 {
+      font-size: 25px;
+      color:#7731A8;
+}
+
+#témoignage p {
+      text-align: center;
+      font-style: italic;
+}
+
+
+/*                   témoignage fin                        */
+
+
+
+
+/*                      informations                        */
+
+#informations {
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+
+}
+
+
+/*             texte:  "A Simplon,"                 */
+#phrase2 {
+      font-size: 25px;
+      color:#7731A8;
+      text-align: center;
+}
+
+
+#informations p {
+      text-align: left;
+      padding:0px 20px 0px 20px;
+}
+
+#informations img {
+      width:250px;
+      height: 305px;
+      border: 1px solid black;
+}
+
+
+/*                      informations  end                      */
+=======
+
+#form{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    height: 550px;
+    padding-top: 50px;
+    margin: auto;
+    }
+
+.formintro{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin: auto
+}
+#intro {
+ line-height: 40px;
+    padding-left: 10px;
+}
+
+#parin {
+  width: 90%;
+    padding-top: 30px;
+    margin: auto;
+
+}
+
+#encadrement p{
+    color: black;
+    font-size: 20px;
+}
+
+div.container{ max-width: 320px;
+}
+
+
+
+div.container:hover .page{
+    transform: rotateY(180deg);}
+
+
+.container, .devant, .arriere{
+width: 320px;
+height: 520px}
+
+.page{transition: .6s;
+    position: relative;
+transform-style: preserve-3d}
+
+/*cacher la face arriere*/
+
+.devant, .arriere{
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/*cacher la face avant*/
+.devant{
+    z-index: 1;
+    transform: rotateY(0deg);
+    background: dodgerblue ;
+    text-align: center
+}
+
+.arriere{
+transform: rotateY(180deg);
+background: dodgerblue;
+border-radius: 10px;
+color: white;
+text-align: center;
+}
+
+.container{
+perspective:300px}
+
+
+#encadrement h2{color: white;
+    text-align: center}
+
+#encadrement a{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: orange;
+    top:420px;
+    left: 110px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black
+    }
+
+#encadrement a:hover{
+  background: orangered;
+  color: snow
+}
+
+#encadrement h1 {
+  color: white;
+  text-align: center
+}
+
+.txt {
+    height: 240px;
+}
+#brain {
+    float: left;
+    padding: 40px 20px 0px 0px;
+}
+#tem {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    height: 380px;
+    margin: 40px auto;
+    background-color: dodgerblue;
+    padding-top: 60px;
+}
+
+#tem2{
+    font-size: 40px;
+    color: dodgerblue;
+    margin: 30px auto;
+}
+
+/*                        SECTION MAFFEW                    */
+
+#humains-boxes img {
+	width: 100%;
+	height: auto;
+}
+
+#humains-boxes {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.humains-box {
+	padding: 10px;
+	flex: 1;
+	border: 1px solid #333;
+	margin-right: 10px;
+}
+
+.humain-box-txt {
+	text-align: justify;
+}
+
+.personne_interviewee {
+	font-size: 20px;
+}
+
+/*                      SECTION MATHILDE                     */
+
+
+html, body{
+	font-family: arial;
+}
+/* -------------- CATEGORIE AMBIANCE PROPRIETES GENERALES BLOC ------------------*/
+
+#ambiance{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+	height: 100vh;
+	background-color:#C7DBD0 ;
+
+}
+
+#ambiance h1{
+	color:#074358;
+}
+
+/* -------------- BLOC POLAROID ------------------*/
+
+#ambiance-bloc-polaroid-general{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+/* -------------- LIGNE 1 ------------------*/
+
+#ambiance-bloc-polaroid{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* -------------- LIGNE 2 ------------------*/
+
+#ambiance-bloc-polaroid-2{
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* -------------- CONTENANT POLAROID ------------------*/
+
+.ambiance-polaroid{
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border: white solid 10px;
+	border-bottom: white solid 50px;
+	box-shadow: 8px 8px 12px #454545;
+	margin: 0 0 40px 20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------- POLAROID ------------------*/
+
+.ambiance-polaroid img{
+	width: 200px;
+}
+/*.ambiance-polaroid p{
+	color: black;
+	z-index: 1;
+	position: absolute;
+    margin-top: -40px;
+    font-family: 'Shadows Into Light', cursive;
+}*/
+#ambiance-photo-1{
+	transform: rotate(-5deg);
+}
+#ambiance-photo-2{
+	transform: rotate(20deg);
+}
+#ambiance-photo-3{
+	transform: rotate(-10deg);
+}
+#ambiance-photo-4{
+	transform: rotate(10deg);
+}
+#ambiance-photo-5{
+	transform: rotate(10deg);
+}
+
+/* -------------- POPUP ------------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666666;
+  z-index: 2;
+}
+.popup .close:hover {
+  color: #360014;
+}
+.popup .content {
+	display: flex;
+}
+
+/* ------------- SLIDER -----------------*/
+#slider{
+	width:500px;
+	height: 500px;
+	overflow: hidden;
+}
+.mySlides {
+	display: none;
+
+}
+.mySlides img{
+	width: 600px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next{
+    border-radius: 3px 0 0 3px;
+    right: 4%;
+}
+.prev{
+	left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* -------------- BLOC POLAROID ------------------*/
+/* -------------- BLOC POLAROID ------------------*/
+/* -------------- BLOC POLAROID ------------------*/
+/* -------------- BLOC POLAROID ------------------*/
+/* -------------- BLOC POLAROID ------------------*/
