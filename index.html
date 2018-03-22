@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="ambiance.css">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Simplon</title>
 </head>
 <body>
@@ -17,38 +18,37 @@
  <section id="humains"></section>
  
 <section id="ambiance">
-
- 	<h1></h1>
+ 	<h1 id="ambiance-h1">SIMPLON UNE GRANDE FAMILLE <i class="fa fa-heart"></i></h1>
  	<div id="ambiance-bloc-polaroid-general">
 	 	<div id="ambiance-bloc-polaroid">
-		 	<div class="ambiance-polaroid" id="ambiance-photo-1">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG1.jpg"></a>
+		 	<div id="ambiance-decaler" class="ambiance-polaroid" id="ambiance-photo-1">
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG12.jpg"></a>
 		 	</div>
 		 	<div class="ambiance-polaroid" id="ambiance-photo-2">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG2.jpg"></a>
-		 	</div>
-		 	<div class="ambiance-polaroid" id="ambiance-photo-3">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG3.jpg"></a>
-		 	</div>
-		 	<div class="ambiance-polaroid" id="ambiance-photo-4">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG4.jpg"></a>
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG2.jpg"></a>
 		 	</div>
 		 	<div class="ambiance-polaroid" id="ambiance-photo-5">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG5.jpg"></a>
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG5.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-3">
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG3.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-4">
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG15.jpg"></a>
 		 	</div>
 	 	</div>
 	 	<div id="ambiance-bloc-polaroid-2">
-		 	<div class="ambiance-polaroid" id="ambiance-photo-1">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG9.jpg"></a>
-		 	</div>
 		 	<div class="ambiance-polaroid" id="ambiance-photo-2">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG7.jpg"></a>
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG7.jpg"></a>
 		 	</div>
 		 	<div class="ambiance-polaroid" id="ambiance-photo-3">
-		 		<a class="titre-contact" href="#popup1"><img src="./img/ambiance-IMG8.jpg"></a>
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG8.jpg"></a>
+		 	</div>
+		 	<div class="ambiance-polaroid" id="ambiance-photo-1">
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1"><img src="./img/ambiance-IMG13.jpg"></a>
 		 	</div>
 		 	<div class="ambiance-polaroid" id="ambiance-photo-4">
-		 		<a class="titre-contact" href="#popup1">
+		 		<a class="ambiance-photo-cible" href="#ambiance-popup1">
 		 			<video width="150px" loop autoplay="true">
   					<source src="./img/ambiance-video.mp4" type="video/mp4">
 					</video>
@@ -56,75 +56,60 @@
 		 	</div>
 	 	</div>
  	</div>
-		
-		<div id="popup1" class="overlay">
-			<div class="popup">
-				<a class="close" href="#">&times;</a>			
-				<div class="content">
-					<div id="slider">
-					<div class="slideshow-container">
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG1.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG2.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG3.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG4.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG5.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG9.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG7.jpg" >
-						</div>
-						<div class="mySlides fade">
-						  <img src="./img/ambiance-IMG8.jpg" >
-						</div>
-						<div class="mySlides fade">
-							<video width="400px" loop autoplay="true">
-  								<source src="./img/ambiance-video.mp4" type="video/mp4">
-							</video>
-						</div>
-
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
+	<div id="ambiance-popup1" class="ambiance-overlay">
+		<div class="ambiance-popup">
+			<a class="ambiance-close" href="#">&times;</a>
+			<div class="ambiance-content">
+				<div id="ambiance-slider">
+				<div class="ambiance-slideshow-container">
+					<div class="ambiance-mySlides ambiancefade" id="ambiance-decaler">
+					  <img src="./img/ambiance-IMG12.jpg" >
+					  <p>Mercredi c'est soutien en Javascript</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+					  <img src="./img/ambiance-IMG2.jpg" >
+					  <p>Il y a beaucoup d'amour entre les <br>apprenants</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+					  <img src="./img/ambiance-IMG5.jpg" >
+					  <p>A 2 on progresse plus vite</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+					  <img src="./img/ambiance-IMG3.jpg" >
+					  <p>Le ping-pong : pause détente quotidienne</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+					  <img src="./img/ambiance-IMG15.jpg" >
+					  <p>Le Graal : bénédiction de Saitama :)</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+					  <img src="./img/ambiance-IMG7.jpg" >
+					  <p>Motivation ...</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">				
+						<img src="./img/ambiance-IMG8.jpg" >
+						<p>Pour les problèmes récalicitrant <br>l'entraide est notre amie !!! </p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+					  <img src="./img/ambiance-IMG13.jpg" >
+					  <p>Joyeux anniversaire Saitama !!! :D</p>
+					</div>
+					<div class="ambiance-mySlides ambiancefade">
+						<video width="400px" loop autoplay="true">
+  							<source src="./img/ambiance-video.mp4" type="video/mp4">
+						</video>
+						<p>Petite soirée pour décompresser</p>
+					</div>
+					<a class="ambiance-prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="ambiance-next" onclick="plusSlides(1)">&#10095;</a>
 				</div>
 			</div>
 		</div>
-	
+	</div>
  </section>
  <footer></footer> 
 
- <script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  if (n > slides.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	      slides[i].style.display = "none";  
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	}
-</script>   
+ <script type="text/javascript" src="ambiance.js"></script>
+	  
 </body>
 </html>

@@ -9,15 +9,26 @@ html, body{
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
-	background-color:#C7DBD0 ;
-	/*background-image: url(./img/ambiance-liege.jpg);*/
+  background-color: #D5F5E1;
+  /*background-image: url(./img/ambiance-liege.jpg);*/
+}
+#ambiance-h1{
+	text-align: center;
+  font-family: QCB;
+  font-size: 40px;
+  margin-top: 50px
 }
 
-#ambiance h1{
-	color:#074358;
+#ambiance-h1:after{
+ display: block;
+ height: 4px;
+ background-color: white;
+ content: " ";
+ width: 300px;
+ margin: 0 auto;
+ margin-top: 30px;
+ margin-bottom: 6%;
 }
-
 /* -------------- BLOC POLAROID ------------------*/
 
 #ambiance-bloc-polaroid-general{
@@ -64,13 +75,6 @@ html, body{
 .ambiance-polaroid img{
 	width: 200px;
 }
-/*.ambiance-polaroid p{
-	color: black;
-	z-index: 1;
-	position: absolute;
-    margin-top: -40px;
-    font-family: 'Shadows Into Light', cursive;
-}*/
 #ambiance-photo-1{
 	transform: rotate(-5deg);
 }
@@ -88,7 +92,8 @@ html, body{
 }
 
 /* -------------- POPUP ------------------*/
-.overlay {
+
+.ambiance-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -99,14 +104,14 @@ html, body{
   visibility: hidden;
   opacity: 0;
 }
-.overlay:target {
+.ambiance-overlay:target {
   visibility: visible;
   opacity: 1;
   display: flex;
   align-items: center;
 }
 
-.popup {
+.ambiance-popup {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -116,7 +121,7 @@ html, body{
   transition: all 5s ease-in-out;
 }
 
-.popup .close {
+.ambiance-popup .ambiance-close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -127,41 +132,44 @@ html, body{
   color: #666666;
   z-index: 2;
 }
-.popup .close:hover {
+.ambiance-popup .ambiance-close:hover {
   color: #360014;
 }
-.popup .content {
+.ambiance-popup .ambiance-content {
 	display: flex;
 }
 
 /* ------------- SLIDER -----------------*/
-#slider{
+
+#ambiance-slider{
 	width:500px;
 	height: 500px;
 	overflow: hidden;
 }
-.mySlides {
+.ambiance-mySlides {
 	display: none;
-	
 }
-.mySlides img{
+.ambiance-mySlides img{
 	width: 600px;
 }
-
-/* Slideshow container */
-.slideshow-container {
+.ambiance-mySlides p{
+	margin-top: 30px;
+  font-size: 23px;
+	position: relative;
+	top: 0;
+	font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
+.ambiance-slideshow-container {
   position: relative;
   margin: auto;
   width: 400px;
   height: 400px;
-  overflow: hidden;
-  display: flex;
+  display: flex; 
   align-items: center;
   justify-content: center;
 }
-
-/* Next & previous buttons */
-.prev, .next {
+.ambiance-prev, .ambiance-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -174,23 +182,17 @@ html, body{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
-/* Position the "next button" to the right */
-.next{
+.ambiance-next{
     border-radius: 3px 0 0 3px;
     right: 4%;
 }
-.prev{
+.ambiance-prev{
 	left: 0;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.ambiance-prev:hover, .ambiance-next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Fading animation */
-.fade {
+.ambiance-fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -207,14 +209,6 @@ html, body{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .ambiance-prev, .ambiance-next,.ambiance-text {font-size: 11px}
 }
-
-
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
