@@ -1,0 +1,28 @@
+#compteur{
+	display: flex;
+	align-items: center;
+	height: 40px;
+	width: 150px;
+	background-color: #BCE2E5;
+	padding-left : 15px;
+	border: solid 1px  #8BC9C8;
+}
+#compteur-heart{
+	margin-right: 30px;
+	font-size: 30px;
+	color: red;
+}
+#compteur-heart:hover{
+	margin-right: 30px;
+	font-size: 30px;
+	color: pink;
+}
+#compteur-like{
+	height: 30px;
+	width: 100px;
+	font-size: 20px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	color:#037674;
+}
