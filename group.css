@@ -1,4 +1,4 @@
-/*css general*/
+/*css general         ZOHRA                     */
 html, body{
   margin: 0%;
   padding: 0%;
@@ -12,7 +12,7 @@ a{
 header{
   width: auto;
   height: 650px;
-  overflow: hidden;
+  padding-bottom:30px;
 }
 /*fonts*/
 
@@ -31,64 +31,120 @@ header{
 @font-face { font-family: QCL; src: url('font/QuarcaCondLight.otf');}
 @font-face { font-family: QCLI; font-style: italic; src: url('font/QuarcaCondLightItalic.otf');}
 
-/*colors*/
+/*colors
+
+#efafa5; rose-ish
+#d6d8db; gris light
+
+*/
 
 /*barre de navigation*/
 #navbar{
   display: flex;
   justify-content: flex-end;
-  background-color: grey;
-  height: 50px;
+  background-color: #efafa5;
+  height: 80px;
+  align-items: center;
   width: 100%;
 }
 #navbar a{
-  font-family: DR;
-  color: white;
+  font-family: QCB;
+  color: #c30044;
   font-size: 30px;
   margin-left: 15%;
-  letter-spacing: 1px;
-}
-.a1{
-  padding-top: 10px;
 }
 .a2{
-  margin-right: 5%;
-  padding-top: 10px;
+  margin-right: 8%;
 }
-#navbar a:hover{
+.a1 a:hover, .a2 a:hover{
   text-decoration: underline;
-  text-shadow: 2px 2px 2px black;
 }
 #navbar .a1{
 }
 .logo img{
-  height: 50px;
+  height: 110px;
+  padding: 10%;
   z-index: 3;
+  border-radius: 50%;
   overflow: visible;
-  background-color: grey;
+  background-color: #efafa5;
+
+}
+.logo{
+  margin-right:10%;
+  padding-top: 4%;
 }
 /* video */
+.bighead{
+  display: flex;
+  justify-content: flex-start;
+}
 .vid{
   width: 100%;
   height: 600px;
-  background-color: black;
+  background-color: white;
+}
+.resize{
+  height: 430px;
+  width: 88%;
+  overflow: hidden;
+  padding-top: 10%;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
 }
 /* h1 header */
 header #intro{
-  color: white;
-  z-index: 3;
+  color: black;
+  text-align: center;
   margin: 0%;
-  padding-top: 1%;
-  width: 20%;
-  position: absolute;
+  width: 48%;
+  padding-top: 5%;
+  position: relative;
   font-family: QCB;
   height: 500px;
 }
-
-
+.reduit{
+  font-family: QCL;
+  font-weight: normal;
+}
+.simplon1{
+  color: #c30044;
+}
+.fa-arrow-right{
+  color: #c30044;
+}
 /* -------------- BLOC COMMENT Shelley------------------*/
 #valeurs{
-    background-color: blueviolet;
+    background-color: #d8e544;
+    height: 950px;
+}
+#valeurs h1{
+  font-family: QCB;
+  text-align: center;
+  font-size:40px;
+  padding-top: 2%;
+  color: black;
+}
+#valeurs h1:after{
+  display: block;
+  height: 4px;
+  background-color: white;
+  content: " ";
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#valeurs p{
+  padding: 1%;
+  padding-left: 2%;
+  font-family: QC;
+  font-size: 24px;
+  height: 250px;
+}
+#valeurs h2{
+  text-align: center;
+  font-family: QCB;
 }
 .button {
     display: block;
@@ -100,21 +156,28 @@ header #intro{
     border-radius: 5px;
     color: white;
     font-weight: bold;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+.button:hover{
+  background-color: #3e707c; /* blue plus foncé*/
 }
 #flex-container{
-	width: 80vw;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
-  padding-left:5%;
+	justify-content: space-around;
+  padding-top: 2%;
 
 }
 .item{
- width: 30vw;
- height: auto;
- padding:2px;
+  border-radius: 15px;
+ width: 25vw;
+ padding-left:2%;
+ padding-right:2%;
+ background-color: white;
 }
 .value_img{
-	width: 30vw;
+	width: 25vw;
 }
 
 @media only screen and (max-width: 767px){
@@ -129,17 +192,19 @@ header #intro{
 
 /*                  SECTION VALENTINO                      */
 
-
 #form{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
+    margin-left: 1.7%;
+    width: 100%;
+    justify-content: space-around;
     height: 550px;
     padding-top: 50px;
     margin: auto;
     }
-
+.page {
+  background-color: red;
+}
 .formintro{
     display: flex;
     flex-direction: column;
@@ -163,7 +228,9 @@ header #intro{
 
 #formation p{
     color: black;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: QC;
+    letter-spacing: 0.5px;
 }
 
 #formation div.container{ max-width: 320px;
@@ -188,30 +255,34 @@ backface-visibility: hidden;
 position: absolute;
 top: 0;
 left: 0;
+background: linear-gradient(#7daaf2, white);
 }
 
 /*cacher la face avant*/
 .devant{
     z-index: 1;
     transform: rotateY(0deg);
-    background: dodgerblue ;
-    text-align: center
+    text-align: center;
+    border-radius: 15px;
 }
 
 .arriere{
 transform: rotateY(180deg);
-background: dodgerblue;
 border-radius: 10px;
 color: white;
 text-align: center;
 }
 
 .container{
-perspective:300px}
+  perspective:300px
+}
 
 
-#formation h2{color: white;
-    text-align: center}
+#formation h2{
+  color: black;
+  text-align: center;
+  font-family: QCB;
+  }
 
 #formation a{
     position: absolute;
@@ -228,11 +299,20 @@ perspective:300px}
     color: black
     }
 
-#formation a:hover{background: orangered;
-        color: snow}
+#formation a:hover{
+  background: orangered;
+  color: snow
+}
 
-#formation h1 {color: white;
-    text-align: center}
+#formation h1 {
+  color: white;
+  text-align: center
+}
+#formation span{
+  font-family: QC;
+  font-weight: bold;
+  font-variant: small-caps;
+}
 
 .txt {
     height: 240px;
@@ -247,9 +327,10 @@ perspective:300px}
     width: 90%;
     justify-content: space-around;
     height: 380px;
-    margin: 40px auto;
-    background-color: dodgerblue;
+    background: linear-gradient(#7daaf2, white);
     padding-top: 60px;
+    margin: 40px auto;
+    border-radius: 15px;
 }
 
 #tem2{
@@ -266,14 +347,37 @@ perspective:300px}
       display:flex;
       flex-direction: column;
       width:100%;
-      height:1100px;
-      border-radius: 10px;
-      background-color: #D1C9E4;
+      background-color: #efa328;
+      padding-bottom: 3%;
 }
-
-
-
-
+#encadrement h1{
+  font-size: 40px;
+  font-family: QCB;
+  text-align: center;
+  color: black;
+}
+#encadrement h1:after{
+  display: block;
+  height: 4px;
+  background-color: white;
+  content: " ";
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#encadrement p{
+  font-family: QC;
+  font-size: 20px;
+}
+.fa-quote-left{
+  font-size: 10px;
+  padding-bottom: 2%;
+  color:#ff3300;
+}
+.fa-quote-right{
+  font-size: 10px;
+  padding-bottom: 2%;
+}
 /*                      témoignage                        */
 #témoignage {
       display: flex;
@@ -287,8 +391,8 @@ perspective:300px}
 #rectangle-style-90 {
       width:100%;
       height: 300px;
-      background-image:url(img/wallpaper.png);
-      margin-top:30px;
+      background-image:url(img/papierpeint.jpg);
+      margin-top:1%;
 }
 
 #témoignage img {
@@ -300,24 +404,30 @@ perspective:300px}
 }
 
 #légende {
-      font-size: 12px;
+      font-size: 20px;
       padding-bottom: 40px;
-}
+      font-family: QCL;
 
+}
 
 /*   phrase d'accroche:
 "J'ai trouvé rassurant que nos formateurs soient
 d'anciens apprenants.                           */
 #phrase1 {
-      font-size: 25px;
-      color:#7731A8;
+      font-size: 30px;
+      color:#ff3300;
+      font-weight: bold;
+      letter-spacing: 1px;
 }
 
 #témoignage p {
       text-align: center;
       font-style: italic;
+      font-weight: bold;
 }
-
+#MK{
+  font-family: QC;
+}
 
 /*                   témoignage fin                        */
 
@@ -330,21 +440,21 @@ d'anciens apprenants.                           */
       display: flex;
       flex-direction: row;
       align-items:center;
-
 }
-
 
 /*             texte:  "A Simplon,"                 */
 #phrase2 {
       font-size: 25px;
-      color:#7731A8;
+      color:#ff3300;
+      font-family: QCB;
       text-align: center;
-}
 
+}
 
 #informations p {
       text-align: left;
       padding:0px 20px 0px 20px;
+
 }
 
 #informations img {
@@ -352,7 +462,6 @@ d'anciens apprenants.                           */
       height: 305px;
       border: 1px solid black;
 }
-
 
 /*                      informations  end                      */
 =======
@@ -386,129 +495,67 @@ d'anciens apprenants.                           */
   width: 90%;
     padding-top: 30px;
     margin: auto;
-
 }
-
-#encadrement p{
-    color: black;
-    font-size: 20px;
+#accrochetxt{
+  font-family: QCBI;
+  font-size: 10px;
 }
-
-div.container{ max-width: 320px;
+.fa-arrow-left{
+  color: ;
+  font-size: 14px;
 }
-
-
-
-div.container:hover .page{
-    transform: rotateY(180deg);}
-
-
-.container, .devant, .arriere{
-width: 320px;
-height: 520px}
-
-.page{transition: .6s;
-    position: relative;
-transform-style: preserve-3d}
-
-/*cacher la face arriere*/
-
-.devant, .arriere{
-backface-visibility: hidden;
-position: absolute;
-top: 0;
-left: 0;
-}
-
-/*cacher la face avant*/
-.devant{
-    z-index: 1;
-    transform: rotateY(0deg);
-    background: dodgerblue ;
-    text-align: center
-}
-
-.arriere{
-transform: rotateY(180deg);
-background: dodgerblue;
-border-radius: 10px;
-color: white;
-text-align: center;
-}
-
-.container{
-perspective:300px}
-
-
-#encadrement h2{color: white;
-    text-align: center}
-
-#encadrement a{
-    position: absolute;
-    display: block;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background: orange;
-    top:420px;
-    left: 110px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: black
-    }
-
-#encadrement a:hover{
-  background: orangered;
-  color: snow
-}
-
-#encadrement h1 {
-  color: white;
-  text-align: center
-}
-
-.txt {
-    height: 240px;
-}
-#brain {
-    float: left;
-    padding: 40px 20px 0px 0px;
-}
-#tem {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-around;
-    height: 380px;
-    margin: 40px auto;
-    background-color: dodgerblue;
-    padding-top: 60px;
-}
-
-#tem2{
-    font-size: 40px;
-    color: dodgerblue;
-    margin: 30px auto;
-}
-
 /*                        SECTION MAFFEW                    */
-
+#hhumain{
+  text-align: center;
+  font-family: QCB;
+  font-size: 40px;
+  background-color: #103351;
+  margin: 0;
+  padding-top: 2%;
+  color: white;
+}
+#hhumain:after{
+  display: block;
+  height: 4px;
+  background-color: white;
+  content: " ";
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 #humains-boxes img {
 	width: 100%;
 	height: auto;
+  border-radius: 15px;
 }
-
 #humains-boxes {
 	display: flex;
 	flex-wrap: wrap;
+  padding-top: 4%;
+  padding-left: 1%;
+  padding-bottom: 2%;
+  background-color: #103351;
+  flex-direction: column;
 }
-
+#humains-boxes p{
+  font-family: QC;
+  font-size: 20px;
+}
+#humains-boxes strong{
+  font-family: QCB;
+  margin-top: 2%;
+  margin-bottom:2%;
+}
 .humains-box {
+  column-count: 5;
 	padding: 10px;
+  border-radius: 15px;
 	flex: 1;
 	border: 1px solid #333;
 	margin-right: 10px;
+  background: white;
+  box-shadow: 4px 4px 10px black;
+  margin-bottom: 1%;
 }
 
 .humain-box-txt {
@@ -517,12 +564,15 @@ perspective:300px}
 
 .personne_interviewee {
 	font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /*                      SECTION MATHILDE                     */
 
 
 html, body{
+	margin: 0;
 	font-family: arial;
 }
 /* -------------- CATEGORIE AMBIANCE PROPRIETES GENERALES BLOC ------------------*/
@@ -532,16 +582,26 @@ html, body{
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-
-	height: 100vh;
-	background-color:#C7DBD0 ;
-
+  background-color: #D5F5E1;
+  /*background-image: url(./img/ambiance-liege.jpg);*/
+}
+#ambiance-h1{
+	text-align: center;
+  font-family: QCB;
+  font-size: 40px;
+  margin-top: 50px
 }
 
-#ambiance h1{
-	color:#074358;
+#ambiance-h1:after{
+ display: block;
+ height: 4px;
+ background-color: white;
+ content: " ";
+ width: 300px;
+ margin: 0 auto;
+ margin-top: 30px;
+ margin-bottom: 6%;
 }
-
 /* -------------- BLOC POLAROID ------------------*/
 
 #ambiance-bloc-polaroid-general{
@@ -588,13 +648,6 @@ html, body{
 .ambiance-polaroid img{
 	width: 200px;
 }
-/*.ambiance-polaroid p{
-	color: black;
-	z-index: 1;
-	position: absolute;
-    margin-top: -40px;
-    font-family: 'Shadows Into Light', cursive;
-}*/
 #ambiance-photo-1{
 	transform: rotate(-5deg);
 }
@@ -612,7 +665,8 @@ html, body{
 }
 
 /* -------------- POPUP ------------------*/
-.overlay {
+
+.ambiance-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -623,14 +677,14 @@ html, body{
   visibility: hidden;
   opacity: 0;
 }
-.overlay:target {
+.ambiance-overlay:target {
   visibility: visible;
   opacity: 1;
   display: flex;
   align-items: center;
 }
 
-.popup {
+.ambiance-popup {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -640,7 +694,7 @@ html, body{
   transition: all 5s ease-in-out;
 }
 
-.popup .close {
+.ambiance-popup .ambiance-close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -651,41 +705,44 @@ html, body{
   color: #666666;
   z-index: 2;
 }
-.popup .close:hover {
+.ambiance-popup .ambiance-close:hover {
   color: #360014;
 }
-.popup .content {
+.ambiance-popup .ambiance-content {
 	display: flex;
 }
 
 /* ------------- SLIDER -----------------*/
-#slider{
+
+#ambiance-slider{
 	width:500px;
 	height: 500px;
 	overflow: hidden;
 }
-.mySlides {
+.ambiance-mySlides {
 	display: none;
-
 }
-.mySlides img{
+.ambiance-mySlides img{
 	width: 600px;
 }
-
-/* Slideshow container */
-.slideshow-container {
+.ambiance-mySlides p{
+	margin-top: 30px;
+  font-size: 23px;
+	position: relative;
+	top: 0;
+	font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
+.ambiance-slideshow-container {
   position: relative;
   margin: auto;
   width: 400px;
   height: 400px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Next & previous buttons */
-.prev, .next {
+.ambiance-prev, .ambiance-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -698,23 +755,17 @@ html, body{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
-/* Position the "next button" to the right */
-.next{
+.ambiance-next{
     border-radius: 3px 0 0 3px;
     right: 4%;
 }
-.prev{
+.ambiance-prev{
 	left: 0;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.ambiance-prev:hover, .ambiance-next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Fading animation */
-.fade {
+.ambiance-fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -731,14 +782,6 @@ html, body{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .ambiance-prev, .ambiance-next,.ambiance-text {font-size: 11px}
 }
-
-
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
-/* -------------- BLOC POLAROID ------------------*/
