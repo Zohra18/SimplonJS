@@ -11,7 +11,7 @@ a{
 }
 
 a img{
-    border: none; 
+    border: none;
 }
 
 .clr{
@@ -107,8 +107,7 @@ a img{
 }
 
 
-.search-box{
-    position: absolute;
+/.search-box{
     top: 280px;
     right: 100px;
    /* transform: translate(-50%,-50%); */
@@ -205,7 +204,7 @@ ul{
 
 ______________________________________________________________
 
-/* 
+/*
 body{
     margin: 0;
     padding: 0;
@@ -228,7 +227,7 @@ ul li a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em;
-    color: brown; 
+    color: brown;
     position: relative;
     padding: 5px;
 }
@@ -326,4 +325,4 @@ ul li a:hover span:last-child:after{
     bottom: -10px;
     right: -10px;
     opacity: 1;
-} */ 
+} */
